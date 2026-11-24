@@ -1109,6 +1109,9 @@ GitHub and GitLab and Bitbucket currently and is not enabled by default.
 
 For Bitbucket, the comments are deleted rather than hidden as Bitbucket does not support hiding comments.
 
+A command for a single directory or project (`-d` or `-p`) only hides previous comments for that
+directory. Autoplans and commands without those flags hide all previous comments for the command.
+
 For GitHub, ensure the `--gh-user` is set appropriately or comments will not be hidden.
 
 When using a GitHub App, Atlantis automatically discovers its identity if `--gh-app-slug` is omitted. If discovery fails, the server still starts, but previous comments cannot be hidden and automatic replies to its own comments cannot be suppressed. Set `--gh-app-slug` explicitly if automatic discovery is unavailable.
